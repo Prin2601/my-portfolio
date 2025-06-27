@@ -629,10 +629,10 @@ h1::after {
         height: auto;
     }
 
-    nav .container {
+    /* nav .container {
         flex-direction: column;
         text-align: center;
-    }
+    } */
 
     nav ul {
         flex-direction: column;
@@ -776,6 +776,9 @@ h1::after {
   color: #fff;
   box-shadow: 0 6px 15px rgba(243, 156, 18, 0.6);
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 
 /* Responsive */
@@ -789,4 +792,11 @@ h1::after {
     width: 90%;
     margin-bottom: 30px;
   }
+  nav ul {
+    display: none;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  
 }
